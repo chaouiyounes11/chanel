@@ -100,7 +100,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+html {
+  scroll-behavior: smooth;
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -263,6 +265,7 @@ position: absolute;
 width: 100%;
 height: 100%;
 margin: 0px;
+opacity: 0;
 }
 
 #section-camelia figure img {
@@ -366,12 +369,103 @@ margin-top: 5%;
 
 #products-results-from-request figure {
   width: 90%;
-  margin: 0px auto;
+  margin: 0px auto 30px auto;
 }
 
 #products-results-from-request figure img {
   width: 100%;
 }
+#products-results-from-request figure figcaption {
+background-color:#f4f2f3;
+text-align: center;
+color: black;
+}
+
+#products-results-from-request figure figcaption .title {
+  color: black;
+  display: block;
+font-family: 'abchanel-pb-m',Arial,Helvetica,sans-serif;
+padding: .57142857rem 1.42857143rem;
+font-size: .92857143rem;
+}
+
+#products-results-from-request figure figcaption .description {
+  display: block;
+height: 3.21428571rem;
+padding: 0 1.42857143rem;
+margin-bottom: 1rem;
+line-height: 1.07142857rem;
+font-size: 11px;
+}
+
+#products-results-from-request figure figcaption .price {
+display: flex;
+justify-content: space-between;
+height: 30px;
+align-items: center;
+}
+
+#products-results-from-request figure figcaption .price span {
+  margin: auto;
+}
+
+#products-results-from-request figure figcaption .price i {
+  margin-right: 10px;
+}
+ #products-results-from-request figure figcaption .title:hover {
+   color: #666;
+ }
+
+  #products-results-from-request p, #products-results-from-request p a {
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+  }
+
+  hr {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  #find-out figure{
+    margin: 0px;
+width: 100%;
+height: auto;
+
+  }
+
+  #find-out figure figcaption {
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px 0px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+  }
+
+  #find-out figure figcaption span {
+font-weight: lighter !important;
+margin-bottom: 20px;
+  }
+
+  #find-out figure figcaption a {
+    text-decoration: none;
+color: white;
+background-color: black;
+width: 128px;
+margin: auto;
+    margin-bottom: auto;
+padding: 10px 26px;
+font-weight: lighter;
+font-size: 11px;
+  }
+
+  #find-out figure img {
+    width: 100%;
+  }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

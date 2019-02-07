@@ -5,7 +5,7 @@ $(document).ready(function(){
 });
 
 $(window).scroll(function() {
-  if ($(this).scrollTop() > 0) {
+  if ($(this).scrollTop() > 3) {
     $('#section-camelia figure').css('opacity', '1').css('transition', '1s');
   }
   else {
