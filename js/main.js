@@ -4,6 +4,11 @@ $(document).ready(function(){
 	});
 });
 
-$('body').scroll(function() {
-$('#section-camelia figure').slideUp().css('display', 'flex');
-})
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 0) {
+    $('#section-camelia figure').css('opacity', '1').css('transition', '1s').css('position', 'fixed');
+  }
+  else {
+    $('#section-camelia figure').css('opacity', '0');
+  }
+});

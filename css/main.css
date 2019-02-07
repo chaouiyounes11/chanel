@@ -105,6 +105,9 @@ header nav {
   display: flex;
   justify-content: space-between;
   background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 header nav button {
@@ -253,12 +256,13 @@ figure {
   width: 100%;
   top: 50px;
   height: 75vh;
-  display: none;
+  opacity: 0;
   position: absolute;
 }
 
 figure img {
   width: 100%;
+  height: 48vh;
 }
 
 
