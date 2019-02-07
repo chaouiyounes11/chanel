@@ -221,6 +221,8 @@ header nav #logo-chanel {
   color: white;
   text-decoration: none;
   margin-left: 18%;
+  font-weight: bold;
+  font-size: 21px;
 }
 
 header nav #logos {
@@ -237,14 +239,19 @@ header nav #logos i {
 #section-camelia {
   background-color: black;
   color: white;
-  height: 100vh;
+  height: 80vh;
+  width: 100%;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0px 10%;
+  opacity: 1;
+}
+
+#section-camelia p {
+  margin: 3% 13%;
 }
 
 #section-camelia h2 {
@@ -252,24 +259,25 @@ header nav #logos i {
 }
 
 #section-camelia figure {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  top: 50px;
-  height: 100%;
-  opacity: 0;
-  position: absolute;
+position: absolute;
+width: 100%;
+height: 100%;
+margin: 0px;
 }
 
 #section-camelia figure img {
   width: 100%;
-  height: 91%;
+  height: 90%;
 }
+
+
 
 #products {
   margin: auto;
 display: flex;
 flex-direction: column;
+-webkit-flex-direction: row;
+-webkit-flex-wrap:wrap;
 }
 
 #products figure {
@@ -304,6 +312,66 @@ transition: .5s;
   transition: .5s;
 }
 
+#filters button {
+  border: 1px solid black;
+background-color: transparent;
+width: 90%;
+margin: auto;
+display: flex;
+justify-content: space-between;
+height: 32px;
+align-items: center;
+}
+
+#filters button i {
+  width: 10%;
+}
+
+#filters button span {
+  width: 100%;
+}
+#filters p span {
+  color: black;
+}
+#filters p {
+  color: grey;
+  text-align: center;
+  margin: 10% 0% 4% 0%;
+}
+
+#results-request {
+  display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+#results-request a {
+  color: grey;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#results-request div {
+  margin-right: 10px;
+width: 18%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+#products-results-from-request {
+margin-top: 5%;
+}
+
+#products-results-from-request figure {
+  width: 90%;
+  margin: 0px auto;
+}
+
+#products-results-from-request figure img {
+  width: 100%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
