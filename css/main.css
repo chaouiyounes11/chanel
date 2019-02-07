@@ -238,6 +238,7 @@ header nav #logos i {
   background-color: black;
   color: white;
   height: 74vh;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
