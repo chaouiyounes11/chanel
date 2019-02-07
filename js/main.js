@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
   if ($(this).scrollTop() > 0) {
-    $('#section-camelia figure').css('opacity', '1').css('transition', '1s').css('position', 'fixed');
+    $('#section-camelia figure').css('opacity', '1').css('transition', '1s');
   }
   else {
     $('#section-camelia figure').css('opacity', '0');
