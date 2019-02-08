@@ -302,18 +302,17 @@ header nav #logos .fa-star {
   padding-left: 30px;
   height: 46px;
   align-items: center;
-  box-shadow: ;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.14);
 }
 
 #filtre-fifteen i {
-      color: grey;
+  color: grey;
 }
 
 #filtre-fifteen p {
   margin-left: 13px;
-color: black;
-font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 #section-camelia {
@@ -400,10 +399,9 @@ font-weight: bold;
   transition: .5s;
 }
 
-#products figure:hover img{
+#products figure:hover img {
   border: 2px solid gray;
   transition: .5s;
-
 }
 
 #filters-desktop {
@@ -689,15 +687,12 @@ footer #footer-classic ul li {
   #products figure {
     width: 15%;
   }
-
   #products figure img {
     width: 62%;
   }
-
   #products figure figcaption {
     margin-top: 10px;
   }
-
   #products-results-from-request {
     display: flex;
     flex-wrap: wrap;
@@ -714,52 +709,42 @@ footer #footer-classic ul li {
     width: 80%;
     margin: auto;
   }
-
   #filters {
     display: none;
   }
-
   #filters-desktop {
     display: flex;
     flex-direction: column;
     margin: 0% auto 5% auto;
     width: 50%;
   }
-
   #filters-desktop p {
     text-align: center;
     border-bottom: .1px solid lightgrey;
     padding-bottom: 10px;
-
   }
   #filters-desktop div {
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
   }
-
   #filters-desktop div button {
-background-color: transparent;
-width: 46%;
-padding: 0px;
-display: flex;
-border: 0px;
-padding-bottom: 10px;
-border-bottom: .1px solid lightgrey;
+    background-color: transparent;
+    width: 46%;
+    padding: 0px;
+    display: flex;
+    border: 0px;
+    padding-bottom: 10px;
+    border-bottom: .1px solid lightgrey;
   }
-
-    #filters-desktop div button i {
-      padding-right: 24px;
-    }
-
-
+  #filters-desktop div button i {
+    padding-right: 24px;
+  }
   hr {
     width: 80%;
   }
-
   #find-out figure #joaillerie-desktop {
     display: block;
   }
-
   #find-out figure #joaillerie-mobile {
     display: none;
   }
@@ -782,11 +767,9 @@ border-bottom: .1px solid lightgrey;
   #find-out figure figcaption a:hover {
     background-color: lightgrey;
   }
-
   #results-request {
-  padding: 0% 10%;
+    padding: 0% 10%;
   }
-
   footer #info ul {
     display: flex;
     justify-content: space-around;
