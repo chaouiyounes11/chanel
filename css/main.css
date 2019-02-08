@@ -141,7 +141,7 @@ header nav button {
   position: absolute;
   width: 16px;
   height: 2px;
-  background: #ffffff;
+  background: white;
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -209,6 +209,12 @@ header nav button {
   opacity: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 #nav-icon2.open span:nth-child(5) {
   left: 0px;
   top: 16px;
@@ -217,6 +223,14 @@ header nav button {
 #nav-icon2.open span:nth-child(6) {
   left: calc(50% - 5px);
   top: 16px;
+}
+
+#menu-mobile-white {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: none;
+  position: absolute;
 }
 
 header nav #logo-chanel {
@@ -244,20 +258,51 @@ header nav #logos .fa-star {
   display: none;
 }
 
-#main-menu  {
+#main-menu {
   display: none;
 }
 
+#menu-mobile-white ul {
+  LIST-STYLE-TYPE: none;
+  text-align: left;
+  margin-top: 80px;
+  padding: 0px;
+}
+
+#menu-mobile-white ul li {
+  margin-left: 40px;
+}
+
+#menu-mobile-white ul hr {
+  width: 100%;
+}
+
+#menu-mobile-white ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#menu-mobile-white #list-menu-two li a {
+  font-weight: lighter;
+  margin-bottom
+}
+
+#menu-mobile-white #list-menu-two li {
+  margin-bottom: 20px;
+}
+
 #filtre-fifteen {
-display: none;
-position: fixed;
-width: 100%;
-background-color: white;
-top: 46px;
-height: 46px;
-align-items: center;
-box-shadow: ;
-box-shadow: 0 5px 10px rgba(0,0,0,0.14);
+  display: none;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 46px;
+  height: 46px;
+  align-items: center;
+  box-shadow: ;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.14);
 }
 
 #section-camelia {
@@ -272,6 +317,11 @@ box-shadow: 0 5px 10px rgba(0,0,0,0.14);
   justify-content: center;
   text-align: center;
   opacity: 1;
+  position: relative;
+}
+
+#section-camelia nav {
+  display: none;
 }
 
 #section-camelia p {
@@ -280,6 +330,7 @@ box-shadow: 0 5px 10px rgba(0,0,0,0.14);
 
 #section-camelia h2 {
   margin: 0px;
+  padding-top: 50px;
 }
 
 #section-camelia figure {
@@ -297,6 +348,10 @@ box-shadow: 0 5px 10px rgba(0,0,0,0.14);
 
 #section-camelia figure #img-desktop {
   display: none;
+}
+
+#nav-icon2 .span-black {
+  background: black;
 }
 
 #products {
@@ -335,6 +390,10 @@ box-shadow: 0 5px 10px rgba(0,0,0,0.14);
 #products figure img:hover {
   border: 2px solid gray;
   transition: .5s;
+}
+
+#filters-desktop {
+  display: none;
 }
 
 #filters button {
@@ -507,12 +566,17 @@ hr {
 footer div ul {
   list-style-type: none;
   text-align: center;
+  padding: 0px;
 }
 
 footer #info ul li {
   font-weight: bold;
   padding-bottom: 14px;
   cursor: pointer;
+}
+
+footer #info ul div {
+  display: none;
 }
 
 footer #footer-classic {
@@ -552,15 +616,13 @@ footer #footer-classic ul li {
     padding: 0px;
     padding: 0px 56px;
   }
-
   #main-menu ul a {
     color: rgb(118, 118, 118);
     text-decoration: none;
     padding: 5px 30px;
   }
-
   #main-menu ul li #joaillerie {
-  color: white;
+    color: white;
   }
   header nav #logo-chanel {
     margin: auto;
@@ -581,18 +643,162 @@ footer #footer-classic ul li {
   #section-camelia {
     height: 90vh;
   }
+  #section-camelia nav {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 189px;
+    z-index: 99;
+  }
+  #section-camelia nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  #section-camelia nav ul li a {
+    text-decoration: none;
+    color: #767676;
+    font-size: 10px;
+    padding: 0px 5px;
+  }
   #section-camelia figure #img-desktop {
     display: flex;
     width: 100%;
     height: 100%;
   }
-
   #products {
-padding: 50px 88px;
+    padding: 60px 88px;
   }
-
   #products figure {
     width: 15%;
+  }
+  #products-results-from-request {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0% 7.5%;
+  }
+  #products-results-from-request figure {
+    width: 45%;
+  }
+  #products-results-from-request p {
+    width: 100%;
+  }
+  #find-out figure {
+    position: relative;
+    width: 80%;
+    margin: auto;
+  }
+
+  #filters {
+    display: none;
+  }
+
+  #filters-desktop {
+    display: flex;
+    flex-direction: column;
+    margin: 0% auto 5% auto;
+    width: 50%;
+  }
+
+  #filters-desktop p {
+    text-align: center;
+    border-bottom: .1px solid lightgrey;
+    padding-bottom: 10px;
+
+  }
+  #filters-desktop div {
+    display: flex;
+justify-content: space-between;
+  }
+
+  #filters-desktop div button {
+background-color: transparent;
+width: 46%;
+padding: 0px;
+display: flex;
+border: 0px;
+padding-bottom: 10px;
+border-bottom: .1px solid lightgrey;
+  }
+
+    #filters-desktop div button i {
+      padding-right: 24px;
+    }
+
+
+  hr {
+    width: 80%;
+  }
+  #find-out figure img {
+    height: 500px;
+    max-width: 100%;
+  }
+  #find-out figure figcaption {
+    position: absolute;
+    left: 56px;
+    top: 155px;
+    z-index: 99;
+    color: white;
+    font-size: 22px;
+  }
+  #find-out figure figcaption a {
+    background-color: white;
+    color: black;
+  }
+  #find-out figure figcaption a:hover {
+    background-color: lightgrey;
+  }
+
+  #results-request {
+  padding: 0% 10%;
+  }
+
+  footer #info ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0% 8%;
+  }
+  footer #info ul hr {
+    display: none;
+  }
+  footer #info ul div {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 80px;
+  }
+  footer #info ul div p {
+    margin: 0px;
+    color: #555;
+    font-weight: lighter;
+    font-size: 13px;
+  }
+  footer #info ul div a {
+    font-size: 9px;
+    color: #767676;
+  }
+  footer #info ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer #footer-classic ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 0px;
+    margin: 0px;
+    align-items: center;
+  }
+  footer #footer-classic ul li {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+  }
+  footer #footer-classic ul hr {
+    display: none;
   }
 }
 

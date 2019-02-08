@@ -1,7 +1,17 @@
+//effet menu burger
 $(document).ready(function(){
 	$('#nav-icon2').click(function(){
 		$(this).toggleClass('open');
 	});
+});
+
+//ouerture menu full page
+$("#nav-icon2").click(function(){
+  $("#menu-mobile-white").slideToggle(500);
+	$('#nav-icon2').css('display', 'flex').css('z-index', '400');
+	$('#nav-icon2 span').toggleClass('span-black');
+	$('body').toggleClass('no-scroll');
+
 });
 
 $(window).scroll(function() {
@@ -27,7 +37,7 @@ $(window).scroll(function() {
 
 $(window).scroll(function() {
 	if ($(window).width() >= 992) {
-  if ($(this).scrollTop() > 100) {
+  if ($(this).scrollTop() > 350) {
 		$('#logo-chanel').css('transition', '1s');
 		$('#logo-chanel').css('display', 'none');
 		$('header nav').css('flex-direction', 'row-reverse');
