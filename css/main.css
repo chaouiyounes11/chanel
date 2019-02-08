@@ -364,7 +364,8 @@ header nav #logos .fa-star {
 
 #products figure {
   margin: 2% auto;
-  width: 50%;
+  width: 60%;
+  max-height: 142px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -380,16 +381,18 @@ header nav #logos .fa-star {
 }
 
 #products figure img {
-  width: 40%;
+  width: 45%;
   border-radius: 100%;
   margin: auto;
+  border: 2px solid transparent;
   padding: 3px;
   transition: .5s;
 }
 
-#products figure img:hover {
+#products figure:hover img{
   border: 2px solid gray;
   transition: .5s;
+
 }
 
 #filters-desktop {
@@ -550,6 +553,10 @@ hr {
   width: 100%;
 }
 
+#find-out figure #joaillerie-desktop {
+  display: none;
+}
+
 #goup {
   display: flex;
   justify-content: center;
@@ -666,11 +673,20 @@ footer #footer-classic ul li {
     height: 100%;
   }
   #products {
-    padding: 60px 88px;
+    padding: 60px 145px;
   }
   #products figure {
     width: 15%;
   }
+
+  #products figure img {
+    width: 62%;
+  }
+
+  #products figure figcaption {
+    margin-top: 10px;
+  }
+
   #products-results-from-request {
     display: flex;
     flex-wrap: wrap;
@@ -727,6 +743,14 @@ border-bottom: .1px solid lightgrey;
 
   hr {
     width: 80%;
+  }
+
+  #find-out figure #joaillerie-desktop {
+    display: block;
+  }
+
+  #find-out figure #joaillerie-mobile {
+    display: none;
   }
   #find-out figure img {
     height: 500px;
