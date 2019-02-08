@@ -299,10 +299,21 @@ header nav #logos .fa-star {
   width: 100%;
   background-color: white;
   top: 46px;
+  padding-left: 30px;
   height: 46px;
   align-items: center;
   box-shadow: ;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.14);
+}
+
+#filtre-fifteen i {
+      color: grey;
+}
+
+#filtre-fifteen p {
+  margin-left: 13px;
+color: black;
+font-weight: bold;
 }
 
 #section-camelia {
